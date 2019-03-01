@@ -33,6 +33,7 @@ def scrape():
                 if article.find('p.teasertext', first=True):
                     _article["text"] = article.find('p.teasertext', first=True).text
                 
-                result["articles"].append(_article)
+                if _article["headline"] != "":
+                    result["articles"].append(_article)
     
     return result
