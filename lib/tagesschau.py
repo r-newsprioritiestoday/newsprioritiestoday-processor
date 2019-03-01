@@ -35,5 +35,11 @@ def scrape():
                 
                 if _article["headline"] != "":
                     result["articles"].append(_article)
+
+                if "inland" in _article["link"]:
+                    _article["category"] = "Inland"
+
+                if "ausland" in _article["link"]:
+                    _article["category"] = "Abroad"
     
     return result

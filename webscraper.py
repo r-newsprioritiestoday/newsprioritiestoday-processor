@@ -5,7 +5,7 @@ from lib import drdk
 
 
 # setup database
-db = TinyDB('db.json')
+db = TinyDB('../newsprioritiestoday-data/db.json')
 
 # TODO: make this dynamic so contributor don't have to touch this file anymore.
 
