@@ -14,7 +14,9 @@ scraper_result = {
             "link": ""
             "headline": "",
             "infotext": "" # optional
+            "category": ""
         }
     ]
 }
+
 ```
