@@ -1,9 +1,9 @@
 # /r/newsprioritiestoday
-Official news scraper bot for reddit.com/r/newsprioritiestoday
+Official news scraper bot for [reddit.com/r/newsprioritiestoday](reddit.com/r/newsprioritiestoday)
 
 ## How does it work?
 
-The goal is to post the main headlines from all over the world in a concentrated matter over on reddit.com/r/newsprioritiestoday
+The goal is to post the main headlines from all over the world in a concentrated matter over on [reddit.com/r/newsprioritiestoday](reddit.com/r/newsprioritiestoday).
 
 To achieve this, two scripts are running indepently from eachother.
 - ```webscraper.py``` is scraping the big news sites for their headlines and converts the info into easier to handle structure
@@ -16,7 +16,7 @@ Contributions are very welcome. Feel free to submit a pull request for a newssou
 ### How to add a news source
 
 1. Add a new source under the ```lib``` directory. Name the file something appropriate for the news source, e.g. it's name.
-2. Use the following template in the file. I use the (requests-html)[https://github.com/kennethreitz/requests-html] library to parse the news sites. Feel free to use your own favourite lib.
+2. Use the following template in the file. I use the [requests-html](https://github.com/kennethreitz/requests-html) library to parse the news sites. Feel free to use your own favourite lib.
 ```
 from requests_html import HTMLSession
 from datetime import datetime
