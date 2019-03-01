@@ -33,5 +33,3 @@ def scrape():
 
         result["articles"].append(_article)
     return result
-
-print(scrape())
