@@ -1,9 +1,9 @@
 # /r/newsprioritiestoday
-Official news scraper bot for [reddit.com/r/newsprioritiestoday](reddit.com/r/newsprioritiestoday)
+Official news scraper bot for [reddit.com/r/newsprioritiestoday](https://reddit.com/r/newsprioritiestoday)
 
 ## How does it work?
 
-The goal is to post the main headlines from all over the world in a concentrated matter over on [reddit.com/r/newsprioritiestoday](reddit.com/r/newsprioritiestoday).
+The goal is to post the main headlines from all over the world in a concentrated matter over on [reddit.com/r/newsprioritiestoday](https://reddit.com/r/newsprioritiestoday).
 
 To achieve this, two scripts are running indepently from eachother.
 - ```webscraper.py``` is scraping the big news sites for their headlines and converts the info into easier to handle structure
