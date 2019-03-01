@@ -5,9 +5,10 @@ Official news scraper bot for [reddit.com/r/newsprioritiestoday](https://reddit.
 
 The goal is to post the main headlines from all over the world in a concentrated matter over on [reddit.com/r/newsprioritiestoday](https://reddit.com/r/newsprioritiestoday).
 
-To achieve this, two scripts are running indepently from eachother.
-- ```webscraper.py``` is scraping the big news sites for their headlines and converts the info into easier to handle structure
-- ```redditbot.py``` is using the data to post a news summary once a day on the subreddit.
+We use the following three repositories to do this:
+- ```newsprioritiestoday-scraper``` is scraping the big news sites for their headlines and converts the info into easier to handle structure.
+- ```newsprioritiestoday-data``` all data that is collected is stored in a tinyDB database. Feel free to explore this yourself.
+- ```newsprioritiestoday-reddibot``` is using the data to post a news summary once a day on the subreddit.
 
 ## Contributions
 
