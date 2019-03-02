@@ -8,7 +8,7 @@ r = session.get('https://www.tagesschau.de/')
 def scrape():
 
     result = {
-        "datetime": str(datetime.now()),
+        "datetime": datetime.now(),
         "country": "Germany",
         "source": "https://www.tagesschau.de/",
         "articles": []

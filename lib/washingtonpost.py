@@ -8,7 +8,7 @@ r = session.get('https://www.washingtonpost.com/')
 def scrape():
 
     result = {
-        "datetime": str(datetime.now()),
+        "datetime": datetime.now(),
         "country": "USA",
         "source": "https://www.washingtonpost.com/",
         "articles": []
