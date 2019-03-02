@@ -29,7 +29,7 @@ r = session.get('https://www.mynewssite.com/')
 def scrape():
 
     result = {
-        "datetime": str(datetime.now()),
+        "datetime": datetime.now(),
         "country": "COUNTRY OF NEWSSITE",
         "source": "https://www.mynewssite.com/",
         "articles": []
@@ -44,8 +44,8 @@ Your scrape function must return the result object. The articles array should co
 {
     "link":     ""
     "headline": "",
-    "infotext": "" # optional
-    "category": "" # optional
+    "infotext": "" # optional, additional information that might be added to a news link
+    "category": "" # optional, can be 'Inland' or 'Abroad'
 }
 ```
 3. Create your pull request. I will check out your code and add your scrape function to the main loop.
