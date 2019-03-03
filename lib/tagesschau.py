@@ -10,6 +10,7 @@ def scrape():
     result = {
         "datetime": datetime.now(),
         "country": "Germany",
+        "code": "de",
         "source": "https://www.tagesschau.de/",
         "articles": []
     }
