@@ -34,7 +34,7 @@ def scrape():
         }
 
         if len(list(article.links)) != 0:   
-            _article["link"] = list(article.links)[0]
+            _article["link"] = list(article.absolute_links)[0]
             _article["headline"] = article.text
 
             if "indland" in _article["link"] or "regionale" in _article["link"]:

@@ -26,7 +26,7 @@ def scrape():
         }
         if len(list(article.links)) != 0:
             if "multimedia" not in list(article.links)[0] and "100sekunden" not in list(article.links)[0]:
-                _article["link"] = list(article.links)[0]
+                _article["link"] = list(article.absolute_links)[0]
                 if article.find('p.dachzeile', first=True):
                     _article["headline"] = article.find('p.dachzeile', first=True).text
 

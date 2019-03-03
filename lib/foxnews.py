@@ -28,7 +28,7 @@ def scrape():
             "category": ""
         }
 
-        _article["link"] = list(article.links)[0]
+        _article["link"] = list(article.absolute_links)[0]
         _article["headline"] = article.text
 
         result["articles"].append(_article)
