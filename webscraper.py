@@ -6,6 +6,7 @@ from lib import tagesschau
 from lib import drdk
 from lib import foxnews
 from lib import rt
+from lib import aljazeera
 
 class DateTimeSerializer(Serializer):
     OBJ_CLASS = datetime
@@ -32,6 +33,7 @@ results.append(tagesschau.scrape())
 results.append(drdk.scrape())
 results.append(foxnews.scrape())
 results.append(rt.scrape())
+results.append(aljazeera.scrape())
 
 # add results to database
 for result in results:
