@@ -10,6 +10,7 @@ def scrape():
     result = {
         "datetime": datetime.now(),
         "country": "Qatar",
+        "code": "ar",
         "source": "https://www.aljazeera.net/",
         "articles": []
     }
