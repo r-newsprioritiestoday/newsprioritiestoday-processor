@@ -24,10 +24,12 @@ class DateTimeSerializer(Serializer):
 serialization = SerializationMiddleware()
 serialization.register_serializer(DateTimeSerializer(), 'TinyDate')
 
-db = TinyDB('../newsprioritytoday-data/db.json', storage=serialization)
+print('opening database...')
+db = TinyDB('../newsprioritiestoday-data/db.json', storage=serialization)
 
 # TODO: make this dynamic so contributor don't have to touch this file anymore.
 
+print('reading the news...')
 results = []
 results.append(tagesschau.scrape())
 results.append(drdk.scrape())
@@ -35,6 +37,7 @@ results.append(foxnews.scrape())
 results.append(rt.scrape())
 results.append(aljazeera.scrape())
 
+print('saving data...')
 # add results to database
 for result in results:
     db.insert(result)
