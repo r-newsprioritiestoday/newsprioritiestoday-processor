@@ -24,7 +24,7 @@ class DateTimeSerializer(Serializer):
 serialization = SerializationMiddleware()
 serialization.register_serializer(DateTimeSerializer(), 'TinyDate')
 
-db = TinyDB('data/db.json', storage=serialization)
+db = TinyDB('../newsprioritytoday-data/db.json', storage=serialization)
 
 # TODO: make this dynamic so contributor don't have to touch this file anymore.
 
