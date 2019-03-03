@@ -10,6 +10,7 @@ def scrape():
     result = {
         "datetime": datetime.now(),
         "country": "USA",
+        "code": "en",
         "source": "https://www.foxnews.com/",
         "articles": []
     }
