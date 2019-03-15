@@ -24,14 +24,15 @@ def scrape():
         "text": "", # optional
         "category": ""
     }
-    if len(list(main_story.links)) != 0:
-        _main_article["link"] = list(main_story.absolute_links)[0]
+    if main_story:
+        if len(list(main_story.links)) != 0:
+            _main_article["link"] = list(main_story.absolute_links)[0]
 
-        if main_story.find('.mainStory__title', first=True):
-            _main_article["headline"] = main_story.find('.mainStory__title', first=True).text
+            if main_story.find('.mainStory__title', first=True):
+                _main_article["headline"] = main_story.find('.mainStory__title', first=True).text
 
-        if main_story.find('.card__text', first=True):
-            _main_article["text"] = main_story.find('.card__text', first=True).text
+            if main_story.find('.card__text', first=True):
+                _main_article["text"] = main_story.find('.card__text', first=True).text
 
     result["articles"].append(_main_article)
 
